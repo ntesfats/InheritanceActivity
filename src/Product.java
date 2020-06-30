@@ -39,6 +39,10 @@ public class Product {
         this.price = price;
     }
 
+    public Boolean equals(String otherProductCode) {
+        return this.code.equals(otherProductCode);
+    }
+
     @Override
     public String toString() {
         return "Code:                " + code + "\n" +

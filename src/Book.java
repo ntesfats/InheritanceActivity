@@ -3,8 +3,6 @@ public class Book extends Product {
     private String author;
     private int pages;
 
-
-
     public String getAuthor() {
         return author;
     }
@@ -19,5 +17,9 @@ public class Book extends Product {
 
     public void setPages(int pages) {
         this.pages = pages;
+    }
+    @Override
+    public Boolean equals(String otherAuthor){
+        return this.author.equals(otherAuthor);
     }
 }

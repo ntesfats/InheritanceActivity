@@ -27,4 +27,8 @@ public class Software extends Product {
     public void setOs(String os) {
         this.os = os;
     }
+    @Override
+    public Boolean equals(String otherProgrammer){
+        return this.programmer.equals(otherProgrammer);
+    }
 }
